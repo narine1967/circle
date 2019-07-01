@@ -5,13 +5,11 @@
 
 
 
-
-
 .container {
 
     width: 100px;
     height: 100px;
-    border:  2px solid black;
+    border:  2px solid white;
     
     top: 700px;
     left: 700px;
@@ -27,7 +25,7 @@
     left: 35px;
     width:  30px;
     height: 30px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 50%;
     background-color: aquamarine;
     -webkit-animation: circle 4s linear infinite; 
@@ -57,3 +55,50 @@
 }
 
 
+.container2 {
+    width: 100px;
+    height: 100px;
+    
+    top: 400px;
+    left: 400px;
+    position: absolute;
+   
+   animation: cont2 10s linear infinite normal;
+   
+}
+div {
+    position: inherit;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes cont2 {
+    0% {transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.circle2 {
+    position: inherit;
+    top: 35px;
+    left: 35px;
+    width:  30px;
+    height: 30px;
+     
+    border-radius: 50%;
+    
+    -webkit-animation: circle1 4s linear infinite reverse; 
+       -moz-animation: circle1 4s linear infinite reverse; 
+         -o-animation: circle1 4s linear infinite reverse; 
+            animation: circle1 4s linear infinite reverse; 
+            
+}
+
+@keyframes circle1 {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
