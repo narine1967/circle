@@ -58,17 +58,15 @@
 .container2 {
     width: 100px;
     height: 100px;
-    
+    border: 2px solid wheat;
     top: 400px;
     left: 400px;
     position: absolute;
-   
+   background-color: aqua;
    animation: cont2 10s linear infinite normal;
    
 }
-div {
-    position: inherit;
-}
+
 img {
     width: 100px;
     height: 100px;
@@ -83,9 +81,6 @@ img {
 }
 
 .circle2 {
-    position: inherit;
-    top: 35px;
-    left: 35px;
     width:  30px;
     height: 30px;
      
